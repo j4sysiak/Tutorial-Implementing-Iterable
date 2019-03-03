@@ -6,6 +6,7 @@ import java.util.LinkedList;
  
  
 public class UrlLibrary implements Iterable<String> {
+	
     private LinkedList<String> urls = new LinkedList<String>();
  
     private class UrlIterator implements Iterator<String> {
@@ -54,17 +55,18 @@ public class UrlLibrary implements Iterable<String> {
     }
      
     public UrlLibrary() {
-        urls.add("http://www.caveofprogramming.com");
-        urls.add("http://www.facebook.com/caveofprogramming");
-        urls.add("http://news.bbc.co.uk");
+        urls.add("http://www.dhfdhdf.com");
+        urls.add("http://www.hfhfgh.com/dgghfh");
+        urls.add("http://news.fghfh.co.uu");
     }
  
+    //    using Custom method  (my own)
     @Override
     public Iterator<String> iterator() {
         return new UrlIterator();
     }
  
-    /*
+    /*  the simplest way using not custom method
     @Override
     public Iterator<String> iterator() {
         return urls.iterator();
