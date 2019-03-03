@@ -1,3 +1,5 @@
+import java.util.Iterator;
+
 
 public class App {
 
@@ -5,8 +7,16 @@ public class App {
 	 
 		UrlLibrary urlLibrary = new UrlLibrary();
 		
-		urlLibrary.iterator();
+		Iterator<String> it = urlLibrary.iterator();
+		
+		while(it.hasNext()){
+			String value = it.next();
+			System.out.println(value);
+		}
 
 	}
 
 }
+
+
+ 
